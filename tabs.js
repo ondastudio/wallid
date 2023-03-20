@@ -1,4 +1,6 @@
-  $("#tabs").on("inview", function (event, isInView) {
+  document.addEventListener("DOMContentLoaded", function () {
+
+    $("#tabs").on("inview", function (event, isInView) {
     if (isInView) {
       // Select the SVG element
       const svgElement = document.querySelector(".svg-tab1");
@@ -9,11 +11,12 @@
         defaults: { ease: "none" }
       });
       //draws all elements with the "draw-me" class applied with staggered start times 0.5 seconds apart
-      TweenMax.staggerFrom(".draw-me", 1, { drawSVG: 0 }, 0.5);
-      TweenMax.staggerFrom(".draw-me-mobile", 1, { drawSVG: 0 }, 0.5);
+      gsap.staggerFrom(".draw-me", 1, { drawSVG: 0 }, 0.5);
+      gsap.staggerFrom(".draw-me-mobile", 1, { drawSVG: 0 }, 0.5);
       // Start the animation
       drawSVGTimeline.play();
     }
+    });
 
   $(".trigger-2").on("click", function () {
     //tab2
