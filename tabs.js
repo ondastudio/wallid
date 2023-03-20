@@ -52,17 +52,3 @@ document.addEventListener("DOMContentLoaded", function () {
     // Start the animation
     drawSVGTimeline3.play();
   });
-  
-      // Select the SVG element
-    const svgElementleft = document.querySelector(".svg-embed");
-    // Define the DrawSVG timeline
-    const drawSVGTimelineleft = gsap.timeline();
-    // Set up the DrawSVG animation
-    drawSVGTimelineleft.to(svgElementleft, {
-      defaults: { ease: "none" }
-    });
-    //draws all elements with the "draw-me" class applied with staggered start times 0.5 seconds apart
-    TweenMax.staggerFrom(".draw-line", 3, { drawSVG: 0 }, 0.5);
-    // Start the animation
-    drawSVGTimelineleft.play();
-});
