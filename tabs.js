@@ -14,8 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
       TweenMax.staggerFrom(".draw-me-mobile", 1, { drawSVG: 0 }, 0.5);
       // Start the animation
       drawSVGTimeline.play();
-    } else {
-      drawSVGTimeline.pause();
     }
   });
 
