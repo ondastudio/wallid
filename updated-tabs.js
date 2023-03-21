@@ -10,10 +10,8 @@ $(document).ready(function() {
       // Set up the DrawSVG animation
       drawSVGTimeline.to(svgElement);
       // Draws all elements with the "draw-me" class applied with staggered start times 0.5 seconds apart
-      //gsap.staggerFrom(".draw-me", 1, { drawSVG: 0 }, 0.5);
-      //gsap.staggerFrom(".draw-me-mobile", 1, { drawSVG: 0 }, 0.5);
-      gsap.fromTo(".draw-me", {drawSVG: 0}, {drawSVG: 1, duration: 3, stagger: 0.5});
-      gsap.fromTo(".draw-me-mobile", {drawSVG: 0}, {drawSVG: 1, duration: 3, stagger: 0.5});
+      gsap.staggerFrom(".draw-me", 1, { drawSVG: 0 }, 0.5);
+      gsap.staggerFrom(".draw-me-mobile", 1, { drawSVG: 0 }, 0.5);
       // Start the animation
       drawSVGTimeline.play();
     }
@@ -32,10 +30,8 @@ $(document).ready(function() {
     console.log(svgElement2);
     drawSVGTimeline2.to(svgElement2);
     // Draws all elements with the "draw-me" class applied with staggered start times 0.5 seconds apart
-    //gsap.staggerFrom(".draw-me2", 3, { drawSVG: 0 }, 0.5);
-    //gsap.staggerFrom(".draw-me-mobile2", 3, { drawSVG: 0 }, 0.5);
-    gsap.fromTo(".draw-me", {drawSVG: 0}, {drawSVG: 1, duration: 3, stagger: 0.5});
-    gsap.fromTo(".draw-me-mobile", {drawSVG: 0}, {drawSVG: 1, duration: 3, stagger: 0.5});
+    gsap.staggerFrom(".draw-me2", 3, { drawSVG: 0 }, 0.5);
+    gsap.staggerFrom(".draw-me-mobile2", 3, { drawSVG: 0 }, 0.5);
     // Start the animation
     drawSVGTimeline2.play();
   });
@@ -50,6 +46,7 @@ $(document).ready(function() {
       defaults: { ease: "none" },
     });
     // Set up the DrawSVG animation
+    console.log(svgElement3);
     drawSVGTimeline3.to(svgElement3);
     // Draws all elements with the "draw-me" class applied with staggered start times 0.5 seconds apart
     gsap.staggerFrom(".draw-me3", 3, { drawSVG: 0 }, 0.5);
