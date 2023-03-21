@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  $("#tabs").on("inview", function (event, isInView) {
+  /* $("#tabs").on("inview", function (event, isInView) {
     if (isInView) {
       // Select the SVG element
       const svgElement = document.querySelector(".svg-tab1");
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Start the animation
       drawSVGTimeline.play();
     }
-  });
+  }); */
 
   $(".trigger-2").on("click", function () {
     // Tab 2
