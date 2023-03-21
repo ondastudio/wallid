@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 $(".trigger-2").on("click", function () {
   // Tab 2
-
+    console.log("button2");
   // Select the SVG element
   const svgElement2 = document.querySelector(".svg-tab2");
   // Define the DrawSVG timeline
@@ -34,7 +34,6 @@ $(".trigger-2").on("click", function () {
   gsap.staggerFrom(".draw-me-mobile2", 3, { drawSVG: 0 }, 0.5);
   // Start the animation
   drawSVGTimeline2.play();
-    console.log("button2")
 });
 
 $(".trigger-3").on("click", function () {
