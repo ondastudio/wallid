@@ -51,4 +51,3 @@
     // Start the animation
     drawSVGTimeline3.play();
   });
-  });
