@@ -1,3 +1,5 @@
+    document.addEventListener("DOMContentLoaded", function () {
+
     $("#tabs").on("inview", function (event, isInView) {
     if (isInView) {
       // Select the SVG element
@@ -14,7 +16,7 @@
       // Start the animation
       drawSVGTimeline.play();
     }
-          });
+});
 
   $(".trigger-2").on("click", function () {
     //tab2
@@ -50,4 +52,5 @@
     TweenMax.staggerFrom(".draw-me-mobile3", 3, { drawSVG: 0 }, 0.5);
     // Start the animation
     drawSVGTimeline3.play();
+  });
   });
