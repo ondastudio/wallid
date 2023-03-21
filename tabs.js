@@ -30,8 +30,8 @@
       defaults: { ease: "none" }
     });
     //draws all elements with the "draw-me" class applied with staggered start times 0.5 seconds apart
-    TweenMax.staggerFrom(".draw-me2", 3, { drawSVG: 0 }, 0.5);
-    TweenMax.staggerFrom(".draw-me-mobile2", 3, { drawSVG: 0 }, 0.5);
+    gsap.staggerFrom(".draw-me2", 3, { drawSVG: 0 }, 0.5);
+    gsap.staggerFrom(".draw-me-mobile2", 3, { drawSVG: 0 }, 0.5);
     // Start the animation
     drawSVGTimeline2.play();
   });
@@ -48,8 +48,8 @@
       defaults: { ease: "none" }
     });
     //draws all elements with the "draw-me" class applied with staggered start times 0.5 seconds apart
-    TweenMax.staggerFrom(".draw-me3", 3, { drawSVG: 0 }, 0.5);
-    TweenMax.staggerFrom(".draw-me-mobile3", 3, { drawSVG: 0 }, 0.5);
+    gsap.staggerFrom(".draw-me3", 3, { drawSVG: 0 }, 0.5);
+    gsap.staggerFrom(".draw-me-mobile3", 3, { drawSVG: 0 }, 0.5);
     // Start the animation
     drawSVGTimeline3.play();
   });
