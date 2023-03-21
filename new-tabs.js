@@ -6,9 +6,10 @@ $(document).ready(function() {
       console.log(svgElement); // Check if svgElement is properly defined and not null
       // Define the DrawSVG timeline
       const drawSVGTimeline = gsap.timeline({
-        console.log(drawSVGTimeline); // Check if drawSVGTimeline is properly defined
         defaults: { ease: "none" },
       });
+              console.log(drawSVGTimeline); // Check if drawSVGTimeline is properly defined
+
       // Set up the DrawSVG animation
     console.log($(svgElement)); // Check if the selector for svgElement is correct
       drawSVGTimeline.to($(svgElement));
