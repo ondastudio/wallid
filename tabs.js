@@ -1,4 +1,4 @@
-  /* $("#tabs").on("inview", function (event, isInView) {
+  $("#tabs").on("inview", function (event, isInView) {
   if (isInView) {
     // Select the SVG element
     const svgElement = document.querySelector(".svg-tab1");
@@ -15,8 +15,8 @@
     drawSVGTimeline.play();
   }
 });
-*/
 
+/*
 $(".trigger-2").on("click", function () {
   // Tab 2
 
@@ -51,4 +51,4 @@ $(".trigger-3").on("click", function () {
   gsap.staggerFrom(".draw-me-mobile3", 3, { drawSVG: 0 }, 0.5);
   // Start the animation
   drawSVGTimeline3.play();
-});
+});*/
