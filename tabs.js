@@ -14,6 +14,7 @@
     // Start the animation
     drawSVGTimeline.play();
   }
+      console.log();
 });
 
 $(".trigger-2").on("click", function () {
