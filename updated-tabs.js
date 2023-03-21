@@ -34,6 +34,7 @@ $(".trigger-2").on("click", function () {
   gsap.staggerFrom(".draw-me-mobile2", 3, { drawSVG: 0 }, 0.5);
   // Start the animation
   drawSVGTimeline2.play();
+    console.log()
 });
 
 $(".trigger-3").on("click", function () {
