@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  /* $("#tabs").on("inview", function (event, isInView) {
+  $("#tabs").on("inview", function (event, isInView) {
     if (isInView) {
       // Select the SVG element
       const svgElement = document.querySelector(".svg-tab1");
@@ -15,11 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
       // Start the animation
       drawSVGTimeline.play();
     }
-  }); */
+  });
 
   $(".trigger-2").on("click", function () {
     // Tab 2
-    console.log("button2");
+    
     // Select the SVG element
     const svgElement2 = document.querySelector(".svg-tab2");
     // Define the DrawSVG timeline
@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       defaults: { ease: "none" },
     });
     // Set up the DrawSVG animation
+    console.log(svgElement2);
     drawSVGTimeline2.to(svgElement2);
     // Draws all elements with the "draw-me" class applied with staggered start times 0.5 seconds apart
     gsap.staggerFrom(".draw-me2", 3, { drawSVG: 0 }, 0.5);
