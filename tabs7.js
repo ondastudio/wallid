@@ -11,8 +11,8 @@
         defaults: { ease: "none" }
       });
       //draws all elements with the "draw-me" class applied with staggered start times 0.5 seconds apart
-      gsap.staggerFrom(".draw-me", 1, { drawSVG: 0 }, 0.5);
-      gsap.staggerFrom(".draw-me-mobile", 1, { drawSVG: 0 }, 0.5);
+      TweenMax.staggerFrom(".draw-me", 1, { drawSVG: 0 }, 0.5);
+      TweenMax.staggerFrom(".draw-me-mobile", 1, { drawSVG: 0 }, 0.5);
       // Start the animation
       drawSVGTimeline.play();
     }
