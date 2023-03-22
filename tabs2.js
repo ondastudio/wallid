@@ -3,7 +3,7 @@
     // Select the SVG element
     const svgElement = document.querySelector(".svg-tab1");
     // Define the DrawSVG timeline
-    const drawSVGTimeline = gsap.timeline({
+    const drawSVGTimeline = new TimelineLite({
       defaults: { ease: "none" }
     });
     // Set up the DrawSVG animation
